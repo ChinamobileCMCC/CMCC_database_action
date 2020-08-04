@@ -1,9 +1,7 @@
 import pymysql
 
-db = pymysql.connect(host='39.101.137.254', port=3306, user='root', passwd='', db='testdb', charset='utf8')
-# 智慧物联网项目运维人员账户
-# http://39.101.137.254:9000/
-# 账户密码为动态token
+db = pymysql.connect(host='', port=3306, user='', passwd='', db='testdb', charset='utf8')
+
 cursor = db.cursor()
 
 cursor.execute("select version()")
